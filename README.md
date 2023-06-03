@@ -13,6 +13,13 @@ Please note that the app contains fake data for demonstration purposes only. You
 ## Download App
 https://www.mediafire.com/file/8x7qj6kt5y88dc9/app-debug.apk/file
     
+   
+## Adobe XD Design
+https://www.mediafire.com/file/axh52aykn8v4t2f/Design_Concept_-_Banking_app.xd/file
+    
+    
+    
+    
     
 ## Screenshots
 
