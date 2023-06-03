@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.card_settings.CardSettings">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/btn_Back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_gravity="start|center"
+                    app:tint="@color/green" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Cards settings"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_card"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:text="Monthly expenses"/>
+
+
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/expensesSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:bsb_bubble_color="@color/green"
+                app:bsb_bubble_text_color="@color/colorPrimaryDark"
+                app:bsb_max="5000.0"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="@color/green"
+                app:bsb_section_count="4"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"
+                app:bsb_track_color="@color/green_light"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnResetPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:background="@drawable/bg_btn_2"
+                android:text="Reset Pin"/>
+
+            
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBlockCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:background="@drawable/bg_btn_2"
+                android:text="Block Card"/>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

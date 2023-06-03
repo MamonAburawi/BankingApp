@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="logo_width">80dp</dimen>
+    <dimen name="logo_height">24dp</dimen>
+    <dimen name="ccp_width">80dp</dimen>
+    <dimen name="phone_number_height">48dp</dimen>
+
+
+
+    <dimen name="height_25">15dp</dimen>
+    <dimen name="width_48">48dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="width_55">55dp</dimen>
+    <dimen name="height_65">65dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+
+    <dimen name="width_20">20dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+
+
+
+
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="width_30">30dp</dimen>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_15">15dp</dimen>
+</resources>

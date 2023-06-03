@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="transaction"
+            type="com.mamon.bankingapp.data.Transaction" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/btnItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            tools:src="@drawable/ic_coffee"
+            setIcon="@{transaction.ic}"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Subway"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@{transaction.name}"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Today - 5pm"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                setDateFormat="@{transaction.date}"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            tools:text="-50.00 €"
+            setPrice="@{transaction.price}"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</layout>

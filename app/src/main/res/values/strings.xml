@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Banking App</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resend_code">Resend code</string>
+    <string name="upload_your_document">Upload your document</string>
+    <string name="save">Save</string>
+    <string name="need_support">Need Support?</string>
+    <string name="verify">Verify</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create account</string>
+
+
+</resources>

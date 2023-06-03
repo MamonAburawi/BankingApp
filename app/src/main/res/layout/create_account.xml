@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_screen"
+        tools:context=".screens.create_account.CreateAccount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_gravity="start|center"/>
+
+
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_logo_app"
+                    android:layout_gravity="end|center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="1/4"/>
+
+
+
+
+            </FrameLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_bottom_sheet_white"
+                android:layout_gravity="bottom">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="30dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Create account"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Full Name"/>
+
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"/>
+
+
+
+                        <Spinner
+                            android:id="@+id/country"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="25sp"
+                            android:entries="@array/countries"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:hint="Country" />
+
+
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"/>
+
+
+                        <Spinner
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="25sp"
+                            android:entries="@array/cities"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:hint="Country" />
+
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"/>
+
+
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Address"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:background="@drawable/bg_btn_1"
+                            android:text="Next"/>
+
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+
+
+                        <TextView
+                            android:id="@+id/btnNeedSupport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/green"
+                            android:textSize="18sp"
+                            android:text="Need support?"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>
+
+</layout>

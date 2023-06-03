@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.reset_pin.ResetPin">
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layoutDirection="ltr"
+                android:layout_margin="20dp">
+
+
+                <ImageView
+                    android:id="@+id/btn_Back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_gravity="start|center"
+                    app:tint="@color/green" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Reset Pin"/>
+
+
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/width_20"
+                android:layout_marginStart="@dimen/width_20"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_65"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="@dimen/width_30"
+                    android:layout_marginStart="@dimen/width_30"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layoutDirection="ltr">
+
+
+                    <EditText
+                        android:id="@+id/pin_one"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        tools:text="5"
+                        android:textAlignment="center"
+                        android:textSize="40sp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_item_otp" />
+
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/pin_two"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        tools:text="2"
+                        android:textAlignment="center"
+                        android:textSize="40sp"
+                        android:background="@drawable/bg_item_otp" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/pin_three"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        tools:text="0"
+                        android:textAlignment="center"
+                        android:textSize="40sp"
+                        android:background="@drawable/bg_item_otp" />
+
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/pin_four"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        tools:text="8"
+                        android:textAlignment="center"
+                        android:textSize="40sp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_item_otp" />
+
+
+                </LinearLayout>
+
+
+                <include
+                    android:id="@+id/keyboard_num_layout"
+                    layout="@layout/keyboard_num"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_25"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_btn_1"
+                    android:text="@string/save"/>
+
+
+                <TextView
+                    android:id="@+id/btnNeedSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="16dp"
+                    android:layout_marginTop="@dimen/height_25"
+                    android:text="@string/need_support"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cities">
+
+        <item>Tripoli</item>
+        <item>Musrata</item>
+        <item>Serbia</item>
+        <item>Alkums</item>
+
+    </string-array>
+</resources>
